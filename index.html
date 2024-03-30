@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تولدت مبارک</title>
+  <style>
+  @font-face {
+	font-family: font;
+	src: url('font.ttf');
+  }
+  * {
+	font-family: 'font', arial;
+  }
+  body {
+	background: url(bg.jpg) no-repeat;
+	background-size: 100% 100vh;
+	margin: 0;
+	direction: rtl;
+	color: white;
+	font-size: 150%;
+	animation: txt 2s infinite alternate;
+  }
+  @keyframes txt {
+	20% { color: pink; }
+	40% { color: orange; }
+	60% { color: red; }
+	80% { color: black; }
+  }
+  .container {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(5px);
+  }
+  .container .box {
+	text-align: center;
+  }
+  @media screen and (max-width: 800px) {
+	body {
+		background-size: 150% 100vh;
+	}
+  }
+  </style>
+</head>
+<body onclick="pageLoaded()">
+	<div class="container">
+		<div class="box">
+			<h2>هورررررررررراااااااااااا!!!</h2>
+			<p>
+			تولدت مبارک نیکا جون 🩷<br>
+			انشالله تعداد سالهای عمرت اندازه موهای سرت بشه 😁
+			</p>
+			<span style="font-size: 50%;">برای پخش موزیک رو صفحه بزن</span>
+		</div>
+	</div>
+	<audio id="audio" src="file:///C:/Users/hf189/OneDrive/Desktop/HBD/music.mp3" />
+</body>
+<script>
+    function pageLoaded() {
+		var audio = document.getElementById("audio");
+		audio.play();
+    }
+</script>
+</html>
